@@ -87,8 +87,7 @@ void display()
         return;
     }
     printf("\nID\t\tname\t\t\t\tmarks\t\ttotal\tper\tgrade\n");
-    while(fscanf(fp,"%d|%[^|]|%d %d %d|%d|%f|%c\n",
-                 &id,name,&m1,&m2,&m3,&total,&per,&grade)!=EOF)
+    while(fscanf(fp,"%d|%[^|]|%d %d %d|%d|%f|%c\n",&id,name,&m1,&m2,&m3,&total,&per,&grade)!=EOF)
     {
         printf("%d\t\t%s\t\t\t%d %d %d\t%d\t%.2f\t%c\n",id,name,m1,m2,m3,total,per,grade);
         if(per>top)
@@ -102,8 +101,7 @@ void display()
     fclose(fp);
     printf("\n   TOPPER   \n");
     printf("top ID\ttop name\tper\tgrade\n");
-    printf("%d\t%s\t\t%.2f\t%c\n",
-           tid,tname,top,tgrade);
+    printf("%d\t%s\t\t%.2f\t%c\n",tid,tname,top,tgrade);
 }
 
 void search()
