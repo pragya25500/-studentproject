@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 void result()
 {
     FILE *fp1,*fp2,*fp3;
